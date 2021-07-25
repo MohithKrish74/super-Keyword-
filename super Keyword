@@ -1,0 +1,43 @@
+package com.company;
+
+import com.sun.jdi.Value;
+import org.w3c.dom.ls.LSOutput;
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.*;
+
+class A
+{
+    int a=10;
+}
+class B extends A
+{
+    int a=20;
+    public void show(int a)
+    {
+        System.out.println("The value provided by user is "+a);
+        System.out.println("The value provided in the Child class B is "+this.a);
+        System.out.println("The value provided in the Parent class A is "+super.a);
+
+    }
+}
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+
+        B obj = new B();
+        obj.show(30);
+
+    }
+
+
+}
+
+
+
+
+
+
+
